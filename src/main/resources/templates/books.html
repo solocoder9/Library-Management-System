@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Library Books</title>
+    <link th:href="@{/css/styles.css}" rel="stylesheet"> 
+</head>
+<body>
+    <!-- Include Navigation Menu -->
+    <div th:insert="~{navbar :: nav}"></div>
+
+    <h1>Available Books</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="book : ${books}">
+                <td><a th:href="@{/ui/books/{id}(id=${book.id})}" th:text="${book.title}"></a></td>
+                <td th:text="${book.author}"></td>
+                <td th:text="${book.availableCopies + ' copies available'}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

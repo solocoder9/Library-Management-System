@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Book Details</title>
+    <link th:href="@{/css/styles.css}" rel="stylesheet"> 
+</head>
+<body>
+    <!-- Include Navigation Menu -->
+    <div th:insert="~{navbar :: nav}"></div>
+
+    <!-- Book Details Content -->
+    <div class="book-details">
+        <h1 th:text="${book.title}"></h1>
+        <p>Author: <span th:text="${book.author}"></span></p>
+        <p>ISBN: <span th:text="${book.isbn}"></span></p>
+        <p>Published Date: <span th:text="${book.publishedDate}"></span></p>
+        <p>Pages: <span th:text="${book.pages}"></span></p>
+        <p>Available Copies: <span th:text="${book.availableCopies}"></span></p>
+    </div>
+
+    <!-- Back to List Link -->
+    <div class="back-link">
+        <a href="/ui/books">Back to List</a>
+    </div>
+</body>
+</html>
