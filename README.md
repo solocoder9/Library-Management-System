@@ -82,7 +82,7 @@ The server will start at **http://localhost:8080**
 ## 🚀 Future Enhancements  
 🔹 Implement **Email Notifications** for due dates.  
 🔹 Add **Fine Calculation System** for overdue books.  
-🔹 Enhance UI with React or Angular.  
+🔹 Enhance UI with React.  
 🔹 Implement **Book Reservation System** for members.  
 
 ---
@@ -92,7 +92,7 @@ Want to improve this project? Feel free to fork, create a pull request, or raise
 
 🔗 **GitHub Repository**: [LibraryManagementSystem](https://github.com/solocoder9/Library-Management-System)  
 
-💎 **Contact**: [Your Name](mailto:solocoder9@gmail.com)  
+💎 **Contact**: [Solo Coder](mailto:solocoder9@gmail.com)  
 
 ---
 
